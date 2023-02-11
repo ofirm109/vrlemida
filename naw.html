@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ללאון</title>
+    
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script>
+        document.querySelector('a-scene').enterVR()
+    </script>
+
+
+</head>
+<body>
+    <a-scene background="color: white">
+        <a-assets>
+            <img id="my-image" src="images/image_new.png">
+            <img id="my-image2" src="images/team.png">
+            <img id="my-image3" src="images/daniel.png">
+        </a-assets>
+        <!-- Using the asset management system. -->
+        <a-image src="#my-image" position="0 0 -6" width="13%" height="10%"></a-image>
+        <a-image src="#my-image2" position="0 0 4" width="13%" height="10%"></a-image>
+        <a-image src="#my-image3" position="7 0 0" rotation="0 90 0" width="13%" height="10%"></a-image>
+        <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+        <!--<a-image src="img/BatmanvSuperman.jpg" width="16" height="9"></a-image>-->
+        <a-text value="Leon is my best friend" position="-1.5 5 0"  rotation="90 0 0" width="6" color="black"></a-text>
+
+    </a-scene>
+
+</body>
+</html>
